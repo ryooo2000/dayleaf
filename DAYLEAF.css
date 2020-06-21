@@ -1,0 +1,338 @@
+body{
+	width: 100%;
+	margin-right: 0;
+	margin-left: 0;
+	margin-top: 0;
+	margin-bottom: 50px;
+	}
+#navigation{
+	width: 100%;
+	height: 50px;
+	z-index: 100;
+	background-color: #e2e1e1;
+	font-size: 100%;
+	display: flex;
+	text-align: center;
+}
+
+#gnav{
+	display: flex;
+
+}
+.popo{
+	margin-left: 13vw;
+	list-style: none;
+}
+.po{
+	text-decoration: none;
+	color: black;
+}
+main{
+	padding-bottom: 100px;
+}
+.top{
+	text-align: center;
+	margin-bottom: 70px;
+}
+.showall{
+		background-color: rgb(41, 21, 7);
+	color: cornsilk;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: initial;
+	width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 50px;
+	display: block;
+	text-align: center;
+	border-radius:20px ;
+}
+.font{
+	padding-top: 30px;
+	font-family:;
+}
+.picture1{
+	width: 100vw;
+	height: auto;
+	animation: fadeIn 3s ease 3s 1 normal;
+}
+@keyframes fadeIn { /*animetion-nameで設定した値を書く*/
+
+	0% {opacity: 0} /*アニメーション開始時は不透明度0%*/
+  
+	100% {opacity: 1} /*アニメーション終了時は不透明度100%*/
+  
+  }
+.news{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.innews{
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+
+
+
+
+.inloop_wrap{
+	display: flex;
+	padding-left: 0em;
+	padding-right: 0;
+
+}
+.loop_wrap {
+	display: flex;
+	width: 100%;
+	height: 220px;
+	overflow: hidden;
+	margin-right: 0;
+	margin-left: 0;
+  }
+  .loop_wrap img {
+	width: 220px;
+	height: 220px;
+	margin-right: 5px;
+  }
+  @keyframes loop {
+	0% {
+	  transform: translateX(100%);
+	}
+	to {
+	  transform: translateX(-100%);
+	}
+  }
+  
+  @keyframes loop2 {
+	0% {
+	  transform: translateX(0);
+	}
+	to {
+	  transform: translateX(-2026px);
+	}
+  }
+  .loop_wrap img:first-child {
+	animation: loop 50s -25s linear infinite;
+  }
+  
+  .loop_wrap img:last-child {
+	animation: loop2 50s linear infinite;
+  }
+
+
+
+
+.grad-btn1 {
+/*.grad-btnのCSSは表示/非表示の動作には関係ないので、ご自由にどうぞ。*/
+}
+.grad-btn1::before {
+	content: "Read more";
+	font-size: 10px;
+	
+}
+.grad-item1 {
+	position: relative;
+	overflow: hidden;
+	height: 80px; /*隠した状態の高さ*/
+}
+.grad-item1::before {
+	display: block;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 40px; /*グラデーションで隠す高さ*/
+	background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+	background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+	content: "";
+}
+.grad-trigger1 {
+	display: none; /*チェックボックスは常に非表示*/
+}
+.grad-trigger1:checked ~ .grad-btn1::before {
+	content: "cloese" /*チェックされていたら、文言を変更する*/
+}
+.grad-trigger1:checked ~ .grad-item1 {
+	height: auto; /*チェックされていたら、高さを戻す*/
+}
+.grad-trigger1:checked ~ .grad-item1::before {
+	display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
+}
+
+.grad-btn2 {
+	/*.grad-btnのCSSは表示/非表示の動作には関係ないので、ご自由にどうぞ。*/
+	}
+	.grad-btn2::before {
+		content: "Read more";
+		font-size: 10px;
+		
+	}
+	.grad-item2 {
+		position: relative;
+		overflow: hidden;
+		height: 105px; /*隠した状態の高さ*/
+	}
+	.grad-item2::before {
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 40px; /*グラデーションで隠す高さ*/
+		background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+		background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+		content: "";
+	}
+	.grad-trigger2 {
+		display: none; /*チェックボックスは常に非表示*/
+	}
+	.grad-trigger2:checked ~ .grad-btn2::before {
+		content: "close" /*チェックされていたら、文言を変更する*/
+	}
+	.grad-trigger2:checked ~ .grad-item2 {
+		height: auto; /*チェックされていたら、高さを戻す*/
+	}
+	.grad-trigger2:checked ~ .grad-item2::before {
+		display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
+	}
+
+	.grad-btn3 {
+		/*.grad-btnのCSSは表示/非表示の動作には関係ないので、ご自由にどうぞ。*/
+		}
+		.grad-btn3::before {
+			content: "Read more";
+			font-size: 10px;
+			
+		}
+		.grad-item3 {
+			position: relative;
+			overflow: hidden;
+			height: 105px; /*隠した状態の高さ*/
+		}
+		.grad-item3::before {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 40px; /*グラデーションで隠す高さ*/
+			background: -webkit-linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+			background: linear-gradient(top, rgba(255,255,255,0) 0%, rgba(255,255,255,0.9) 50%, rgba(255,255,255,0.9) 50%, #fff 100%);
+			content: "";
+		}
+		.grad-trigger3 {
+			display: none; /*チェックボックスは常に非表示*/
+		}
+		.grad-trigger3:checked ~ .grad-btn3::before {
+			content: "close" /*チェックされていたら、文言を変更する*/
+		}
+		.grad-trigger3:checked ~ .grad-item3 {
+			height: auto; /*チェックされていたら、高さを戻す*/
+		}
+		.grad-trigger3:checked ~ .grad-item3::before {
+			display: none; /*チェックされていたら、grad-itemのbeforeを非表示にする*/
+		}
+
+.innews_item{
+	display: inline-block;
+	width: 30%;
+	vertical-align: top;
+}
+.item1{
+	margin-right: 3%;
+	margin-left: 3%;
+}
+.consept{
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+.inconsept{
+	margin-right: 0%;
+	margin-left: 10%;
+}
+.inconsept_item{
+	display: inline-block;
+	width: 40%;
+	vertical-align: middle;
+}
+
+
+
+
+
+.inconsept_item>p{
+	font-size: 15px;
+}
+.item2{
+	margin-left: 150px;
+	width: 450px;
+}
+.Menu{
+	margin-top: 100px;
+	margin-bottom: 100px;
+
+}
+.inMenu_item{
+	text-align: center;
+}
+.inaccess{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.inaccess_item{
+	display: inline-block;
+}
+.item3{
+	margin: 40px;
+}
+.item4{
+	text-align: center;
+	margin-bottom: 10px;
+}
+.minsch{
+	display: inline-block;
+	margin-left: 10px;
+}
+.desine{
+	display: inline-block;
+	margin-right: 150px;
+	margin-left: 160px;
+	
+}
+.desine1{
+	font-size: 25px;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	
+}
+.desine2{
+	margin-top: 0;
+	font-size: 20;
+	font-family: sans-serif;
+}
+.desine3{
+	font-size: 10px;
+	margin-bottom: 0px;
+	margin-top: 20px;
+	font-family: sans-serif;
+}
+footer{
+	padding-top: 30px;
+	padding-bottom: 20px;
+	text-align: center;
+	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+}
+footer>div{
+	margin-top: 90px;
+}
+footer>div>p>a{
+	text-decoration: none;
+	color: black;
+
+}
+img.pictureicon{
+	width: 180px;
+	height: 180px;
+	margin-bottom: 70px;
+}

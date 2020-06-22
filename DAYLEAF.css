@@ -6,7 +6,7 @@ body{
 	margin-bottom: 50px;
 	}
 #navigation{
-	width: 100%;
+	width: 100vw;
 	height: 50px;
 	z-index: 100;
 	background-color: #e2e1e1;
@@ -89,7 +89,7 @@ main{
 	display: flex;
 	padding-left: 0em;
 	padding-right: 0;
-
+	list-style: none;
 }
 .loop_wrap {
 	display: flex;
@@ -350,8 +350,8 @@ main{
 }
 .desine{
 	display: inline-block;
-	margin-right: 150px;
-	margin-left: 160px;
+	margin-right: 10vw;
+	margin-left: 10vw;
 	
 }
 .desine1{

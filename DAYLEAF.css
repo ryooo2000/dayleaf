@@ -19,9 +19,17 @@ body{
 	display: flex;
 
 }
-.popo{
-	margin-left: 13vw;
-	list-style: none;
+@media screen and (min-width:481px){
+	.popo{
+		margin-left: 13vw;
+		list-style: none;
+	}
+}
+@media screen and (max-width:480px){
+	.popo{
+		margin-left: 6vw;
+		list-style: none;
+	}
 }
 .po{
 	text-decoration: none;
@@ -91,11 +99,20 @@ main{
 	margin-right: 0;
 	margin-left: 0;
   }
-  .loop_wrap img {
-	width: 220px;
-	height: 220px;
-	margin-right: 5px;
-  }
+@media screen and (min-width:481px){
+	.loop_wrap img {
+		width: 220px;
+		height: 220px;
+		margin-right: 5px;
+  	}
+}  
+@media screen and (max-width:481px){
+	.loop_wrap img {
+		width: 120px;
+		height: 120px;
+		margin-right: 4px;
+	}
+}  
   @keyframes loop {
 	0% {
 	  transform: translateX(100%);
@@ -104,15 +121,26 @@ main{
 	  transform: translateX(-100%);
 	}
   }
-  
-  @keyframes loop2 {
-	0% {
-	  transform: translateX(0);
+@media screen and (min-width:481px){
+  	@keyframes loop2 {
+		0% {
+		  	transform: translateX(0);
+		}
+		to {
+	  		transform: translateX(-2026px);
+		}
+  	}
+}
+@media screen and (max-width:480px){
+	@keyframes loop2 {
+	 	 0% {
+			transform: translateX(0);
+	  	}
+	  	to {
+			transform: translateX(-1120px);
+	  	}
 	}
-	to {
-	  transform: translateX(-2026px);
-	}
-  }
+}
   .loop_wrap img:first-child {
 	animation: loop 50s -25s linear infinite;
   }
@@ -249,25 +277,39 @@ main{
 	margin-bottom: 100px;
 }
 .inconsept{
-	margin-right: 0%;
+	margin-right: 10%;
 	margin-left: 10%;
+}
+@media screen and (min-width:481px){
+	.active{
+		width: 600px;
+		height: auto;
+	}
+}
+@media screen and (max-width:480px){
+	.active{
+		width: 80vw;
+		height: auto;
+	}
 }
 .inconsept_item{
 	display: inline-block;
 	width: 40%;
 	vertical-align: middle;
 }
-
-
-
-
-
 .inconsept_item>p{
 	font-size: 15px;
 }
-.item2{
-	margin-left: 150px;
-	width: 450px;
+@media screen and (min-width:481px){
+	.item2{
+		margin-left: 200px;
+		width: 450px;
+	}
+}
+@media screen and (max-width:480px){
+	.item2{
+		width: 80vw;
+	}
 }
 .Menu{
 	margin-top: 100px;
@@ -283,6 +325,17 @@ main{
 }
 .inaccess_item{
 	display: inline-block;
+}
+@media screen and (min-width:481px){
+	.inaccess_item>iframe{
+		width: 450px;
+		height: 360px;
+	}
+}
+@media screen and (max-width:480px){
+	.inaccess_item>iframe{
+		width: 80vw;
+	}
 }
 .item3{
 	margin: 40px;
@@ -324,7 +377,7 @@ footer{
 	font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
 footer>div{
-	margin-top: 90px;
+	margin-top: 10px;
 }
 footer>div>p>a{
 	text-decoration: none;
@@ -335,4 +388,8 @@ img.pictureicon{
 	width: 180px;
 	height: 180px;
 	margin-bottom: 70px;
+}
+.pulaibacy>p{
+	margin-top: 40px;
+	margin-bottom: 40px;
 }

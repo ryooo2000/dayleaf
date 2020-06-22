@@ -27,7 +27,7 @@ body{
 }
 @media screen and (max-width:480px){
 	.popo{
-		margin-left: 6vw;
+		margin-left: 4vw;
 		list-style: none;
 	}
 }
